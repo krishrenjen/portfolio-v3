@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Work_Sans } from 'next/font/google'
 import './globals.css'
+import StarrySky from '@/components/Visual/StarrySky'
 
 const inter = Work_Sans({ subsets: ['latin'] })
 
@@ -16,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <>
+        <StarrySky />
+        {children}
+        </>
+      </body>
     </html>
   )
 }

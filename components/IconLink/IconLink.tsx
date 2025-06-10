@@ -21,7 +21,7 @@ export default function IconLink({
       rel="noopener noreferrer"
       className={clsx(
         className,
-        "py-3 px-3 bg-dark-gray flex flex-col justify-center items-center gap-3 group hover:bg-[#1f1e1e] transition duration-300",
+        "py-3 px-3 bg-dark-gray flex flex-col justify-center items-center gap-3 group hover:bg-[#1f1e1e] bg-[#111] transition duration-300",
         !className?.includes("w-") && "w-fit" // fallback to w-fit only if no width is passed
       )}    
       >

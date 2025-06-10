@@ -6,6 +6,8 @@ import Chip from "../Chip/Chip";
 import { marked } from "marked";
 import clsx from "clsx";
 import { motion, AnimatePresence } from 'framer-motion';
+import MarkdownInline from "../Markdown/MarkdownInline";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 
 type Tag = {
@@ -120,9 +122,7 @@ export default function ExperienceCard(props: CommonItem){
     <ul className="list-disc list-inside pl-4 [&_strong]:font-semibold">
       {props.bullets?.map((bullet, index) => (
         <li key={index} className="text-sm leading-tight my-1">
-          <span className="relative left-[-10px]" dangerouslySetInnerHTML={{
-            __html: marked.parseInline(bullet),
-          }}/>
+          <MarkdownInline className="relative left-[-10px]" content={bullet}/>
         </li>
       ))}
     </ul>
@@ -180,7 +180,12 @@ export default function ExperienceCard(props: CommonItem){
                   className="px-2 py-0.5 bg-gray-800 text-white rounded-full text-xs flex flex-row items-center justify-center gap-1"
                 >
                   {inProgress && (
-                        <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full inline-block ml-1" title="In Progress" />
+                    <Tooltip>
+                      <TooltipTrigger><span className="w-1.5 h-1.5 bg-yellow-400 rounded-full inline-block ml-1" /></TooltipTrigger>
+                      <TooltipContent>
+                        <p>In Progress</p>
+                      </TooltipContent>
+                    </Tooltip>
                   )}
                   {href ? (
                     <a href={href} target="_blank" rel="noopener noreferrer" className="hover:underline">
@@ -221,7 +226,12 @@ export default function ExperienceCard(props: CommonItem){
                         className="px-2 py-0.5 bg-gray-800 text-white rounded-full text-xs flex flex-row items-center justify-center gap-1"
                       >
                         {inProgress && (
-                              <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full inline-block ml-1" title="In Progress" />
+                          <Tooltip>
+                            <TooltipTrigger><span className="w-1.5 h-1.5 bg-yellow-400 rounded-full inline-block ml-1" /></TooltipTrigger>
+                            <TooltipContent>
+                              <p>In Progress</p>
+                            </TooltipContent>
+                          </Tooltip>
                         )}
                         {href ? (
                           <a href={href} target="_blank" rel="noopener noreferrer" className="hover:underline">

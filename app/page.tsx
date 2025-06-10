@@ -1,8 +1,5 @@
-import { getExperience, getSkills, getStaticText } from '@/common/utils/LoadData';
-import Chip from '@/components/Chip/Chip';
+import { getExperience, getProjects, getSkills, getStaticText } from '@/common/utils/LoadData';
 import IconLink from '@/components/IconLink/IconLink';
-import LogoWithPane from '@/components/Visual/Logo';
-import StarrySky from '@/components/Visual/StarrySky';
 import Image from 'next/image';
 import { FaLocationDot } from "react-icons/fa6";
 import ExperienceCard, { CommonItem } from "@/components/Experience/ExperienceCard";
@@ -10,6 +7,8 @@ import TabbedMenu from '@/components/TabbedMenu/TabbedMenu';
 import LocationDisplay from '@/components/ClientComponents/Location';
 import { Skills } from '@/common/types/Skills';
 import SkillChip from '@/components/Chip/SkillChip';
+import ProjectOverview from '@/components/Project/ProjectOverview';
+import MarkdownInline from '@/components/Markdown/MarkdownInline';
 
 
 
@@ -19,6 +18,9 @@ export default async function Home() {
   const education = experience.education;
 
   const skills : Skills = await getSkills();
+  const projects : Project[] = await getProjects();
+  const staticText = await getStaticText();
+  console.log("staticText:", staticText);
     
   const tabs = [
     {
@@ -35,10 +37,9 @@ export default async function Home() {
     }
   ];
 
-  const staticText = await getStaticText();
+  
   return (
     <>
-      <StarrySky />
       <div className="mx-auto mt-6 max-w-2xl px-6 flex flex-col items-center justify-center bg-[#0a0a0a70] backdrop-filter backdrop-blur-lg backdrop-opacity-50">
         <div className="h-fit flex flex-col items-center justify-start py-14 gap-6 w-full">
           
@@ -67,7 +68,7 @@ export default async function Home() {
           
           {/* Biography section */}
           <div>
-            <p className="font-normal text-l">{staticText.biography}</p>
+            <MarkdownInline content={staticText.biography}/>
           </div>
 
           {/* Socials section */}
@@ -115,6 +116,16 @@ export default async function Home() {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
               {skills.skills_list.slice(0, skills.display).map((skill, index) => (
               <SkillChip key={index} skill={skill} />
+              ))}
+            </div>
+          </div>
+
+          {/* Projects section */}
+          <div className="w-full mt-6">
+            <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {projects.map((project, index) => (
+                  <ProjectOverview key={index} project={project} />
               ))}
             </div>
           </div>

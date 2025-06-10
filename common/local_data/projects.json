@@ -1,0 +1,40 @@
+[
+   {
+        "id": "sb-attendance-app",
+        "title":"SB Attendance App",
+        "title_tags": ["Website"],
+        "type": "Website",
+        "short_description": "NextJS website for club attendance tracking",
+        "description":"Created a NextJS website that allows students to scan a QR code to track their club and event attendance. It also allows club officers to create check in events, view all students who have checked in. They can also restrict login to students located at the school using IP and geolocation. They can also export data to a spreadsheet for easy viewing and logging. Students can view all their attendance for a specific club as well.",
+        "date": "May 2024",
+        "primaryHref": "https://github.com/krishrenjen/sbhs-club-attendance",
+        "links": [
+            {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/sbhs-club-attendance", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"}
+        ],
+        "tags":[
+            {"title": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
+            {"title": "NextJS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
+            {"title": "PostgresSQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"},
+            {"title": "Prisma", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"}
+        ]
+    },
+    {
+        "id": "sb-attendance-app-2",
+        "title":"SB Attendance App",
+        "title_tags": ["Website"],
+        "type": "Website",
+        "short_description": "NextJS website for club attendance tracking. Ima keep yapping here until it goes to a few more lines so that way I can test the scaling to see how it works. :)",
+        "description":"Created a NextJS website that allows students to scan a QR code to track their club and event attendance. It also allows club officers to create check in events, view all students who have checked in. They can also restrict login to students located at the school using IP and geolocation. They can also export data to a spreadsheet for easy viewing and logging. Students can view all their attendance for a specific club as well.",
+        "date": "May 2024",
+        "primaryHref": "https://github.com/krishrenjen/sbhs-club-attendance",
+        "links": [
+            {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/sbhs-club-attendance", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"}
+        ],
+        "tags":[
+            {"title": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
+            {"title": "NextJS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
+            {"title": "PostgresSQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"},
+            {"title": "Prisma", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"}
+        ]
+    }
+]

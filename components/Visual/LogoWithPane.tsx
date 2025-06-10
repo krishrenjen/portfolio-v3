@@ -1,24 +1,28 @@
 'use client';
 
-export default function Logo({
+export default function LogoWithPane({
   src,
   size = 1.5, // in rem
   rgb = '0, 0, 0',
-  alt
 }: {
   src: string;
   size?: number;
   rgb?: string;
-  alt?: string;
 }) {
+  const background = `rgba(${rgb}, 0.1)`;
+  const border = `rgb(${rgb})`;
 
   return (
     <div
       style={{
-        display: 'inline-block'
+        backgroundColor: background,
+        border: `${size / 2}px solid ${border}`,
+        padding: `${size / 6}rem`,
+        borderRadius: `${size * 2}px`,
+        display: 'inline-block',
       }}
     >
-      <div title={alt}
+      <div
         style={{
           backgroundColor: `rgb(${rgb})`,
           WebkitMaskImage: `url(${src})`,

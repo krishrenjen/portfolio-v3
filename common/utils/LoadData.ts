@@ -1,5 +1,7 @@
 import experience from "@/common/local_data/experience.json";
 import skills from "@/common/local_data/skills.json";
+import projects from "@/common/local_data/projects.json";
+import text from "@/common/local_data/text.json";
 
 const urlRoute = "https://krishrenjen.github.io/portfolio-data";
 const static_text_revalidate = 10 * 60; // 10 minutes
@@ -10,9 +12,7 @@ const production = false;
 
 export async function getStaticText(){
   if(!production){
-    return {
-      "biography": "This is a sample biography. This will be fetched during production.",
-    };
+    return text;
   }
   try {
     const response = await fetch(`${urlRoute}/data/text.json`, {
@@ -22,7 +22,6 @@ export async function getStaticText(){
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log(data);
     return data;
   } catch (error) {
     console.error("Error fetching biography:", error);
@@ -43,27 +42,9 @@ export async function getExperience() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log(data);
     return data;
   } catch (error) {
     console.error("Error fetching experience:", error);
-    return [];
-  }
-}
-
-export async function getProjects() {
-  try {
-    const response = await fetch(`${urlRoute}/data/projects.json`, {
-      next: { revalidate: projects_revalidate }, 
-    });
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    console.log(data);
-    return data;
-  } catch (error) {
-    console.error("Error fetching projects:", error);
     return [];
   }
 }
@@ -81,10 +62,29 @@ export async function getSkills(){
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log(data);
     return data;
   } catch (error) {
     console.error("Error fetching skills:", error);
+    return [];
+  }
+}
+
+export async function getProjects(){
+  if(!production){
+    return projects;
+  }
+  
+  try {
+    const response = await fetch(`${urlRoute}/data/projects.json`, {
+      next: { revalidate: projects_revalidate }, 
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching projects:", error);
     return [];
   }
 }
