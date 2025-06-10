@@ -1,0 +1,134 @@
+{
+  "work_experience": [
+    {
+      "company": "Moonpreneur",
+      "title": "Software Engineer Intern",
+      "date": "May 2025 - Aug 2025",
+      "logo": "/exp_images/moonpreneur_logo.png",
+      "bullets": [
+        "**Developed full-stack features** in `.NET Core` and `Next.js`, contributing to **production applications** in an **Agile** environment.",
+        "Built **RESTful APIs** with **Clean Architecture**, `JWT` authentication, and **role-based access control**.",
+        "Designed **responsive UIs** using `Next.js`, `JavaScript`, and `HTML/CSS`; integrated frontend with backend services.",
+        "Wrote **optimized queries** and **stored procedures** in `SQL Server` using `Entity Framework Core`.",
+        "Collaborated via `Git`, `Jira`, `Azure DevOps`, and deployed through **CI/CD pipelines**."
+      ],
+      "primaryHref": "https://moonpreneur.com/",
+      "tags": [
+        { "title": "Typescript", "type": "Language" },
+        { "title": ".NET Core", "type": "Tool" },
+        { "title": "Next.js", "type": "Tool" },
+        { "title": "SQL Server", "type": "Other" },
+        { "title": "Entity Framework Core", "type": "Tool" },
+        { "title": "C#", "type": "Language" },
+        { "title": "Next.js", "type": "Tool" },
+        { "title": "TailwindCSS", "type": "Tool" },
+        { "title": "Git", "type": "Tool" }
+      ]
+    },
+    {
+      "company": "Code 4 Tomorrow",
+      "title": "Website Design Member",
+      "date": "Jul 2023 - Jun 2024",
+      "logo": "/exp_images/c4t_logo.jpg",
+      "bullets": [
+        "Maintained and updated a Next.js website with hundreds of visitors",
+        "Collaborated in a team of 2 developers and collaborated with other teams to implement new features",
+        "Queried data from Notion database and Contentful CMS to display dynamic content"
+      ],
+      "primaryHref": "https://www.code4tomorrow.org",
+      "links": [{ "text": "GitHub Repository", "href": "https://github.com/code4tomorrow/c4t-web", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" }],
+      "tags": [
+        { "title": "Typescript", "type": "Language" },
+        { "title": "Next.js", "type": "Tool" },
+        { "title": "TailwindCSS", "type": "Tool" },
+        { "title": "Vercel", "type": "Tool" }
+      ]
+    },
+    {
+      "company": "CoderDojo",
+      "title": "Chapter Founder, Mentor",
+      "date": "Sep 2021 - Dec 2021",
+      "logo": "/exp_images/coderdojo_logo.png",
+      "primaryHref": "https://sbdojo.github.io/about/",
+      "bullets": [
+        "Co-founded the South Brunswick chapter of CoderDojo to provide free, community-based programming education for students.",
+        "Designed and led engaging lessons in Python by building interactive text adventure games to teach logic and control flow.",
+        "Taught real-world applications of Python by guiding students through creating chatbots with the discord.py library.",
+        "Introduced web development fundamentals by helping students build personalized websites using HTML and CSS based on their individual interests."
+      ],
+      "links": [
+        { "text": "Lessons", "href": "https://sbdojo.gitbook.io/sushi-cards/v/2021-2022/session-1/session-1-info", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitbook/gitbook-original.svg" },
+        { "text": "Instagram", "href": "https://www.instagram.com/sb.coderdojo/", "icon": "/social_logos/instagramlogo.svg" }
+      ],
+      "tags": [
+        { "title": "Volunteer" },
+        { "title": "Python", "type": "Language" },
+        { "title": "HTML5", "type": "Language" },
+        { "title": "CSS3", "type": "Language" },
+        { "title": "discord.py", "type": "Tool" },
+        { "title": "Replit", "type": "Tool" }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Rutgers University - New Brunswick",
+      "date": "Sep 2024 - May 2028 (Expected)",
+      "degree": "B.S | Computer Science and Statistics-Math (Joint Major)",
+      "logo": "/exp_images/rutgers_logo.png",
+      "primaryHref": "https://www.rutgers.edu/",
+      "bullets": [
+        "GPA: 4.0 *(overall)*, 4.0 *(CS)*, 4.0 *(Statistics-Math)*",
+        "Dean's List: Fall 2024-Present"
+      ],
+      "courses": {
+        "Computer Science": [
+          {"name": "Data Structures",
+          "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-112-data-structures",
+          "highlight": true},
+          {"name": "Computer Architecture",
+          "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-211-computer-architecture"},
+          {"name": "Discrete Structures I",
+          "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-205-introduction-to-discrete-structures-i",
+          "highlight": true}
+        ],
+        "Math": ["Linear Algebra", 
+        {"name": "Multivariable Calculus", "highlight": true}, {
+          "name": "Introduction to Mathematical Reasoning",
+          "inProgress": true
+        }, {
+          "name": "Math Theory of Probability",
+          "inProgress": true
+        }],
+        "Statistics": [{
+          "name": "Statistics II",
+          "inProgress": true
+        }]
+      }
+    },
+    {
+      "school": "South Brunswick High School",
+      "date": "Sep 2020 - Jun 2024",
+      "degree": "High School Diploma",
+      "logo": "/exp_images/sbhs_logo.jpg",
+      "bullets": [
+        "GPA: 4.4 *(weighted)*, 4.0 *(unweighted)*"
+      ],
+      "courses": {
+        "Computer Science": [
+          "AP Computer Science A",
+          { "name": "Mobile App Development", "highlight": true },
+          { "name": "VR & Game Design", "highlight": true },
+          "Data Structures",
+          "Computer Science Capstone"
+        ],
+        "Statistics": [
+          { "name": "AP Statistics", "highlight": true },
+          "AP Calculus BC"
+        ]
+      },
+      "tags": [
+      ]
+    }
+  ]
+}

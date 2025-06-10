@@ -1,0 +1,17 @@
+{
+  "display": 10,
+  "skills_list": [
+    {"name": "TypeScript", 
+    "color": "0,122,204",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
+    {"name": "JavaScript",
+    "color": "240,219,79",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"},
+    {"name": "Python",
+    "color": "54,113,161",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg"},
+    {"name": "Java",
+    "color": "197,85,85",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"}
+  ]
+}

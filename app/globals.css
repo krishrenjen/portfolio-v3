@@ -10,6 +10,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-brand-red: #960200;
+  --color-brand-pink: #FF5666;
+  --color-brand-cyan: #558C8C;
+  --color-brand-blue: #5EB1BF;
 }
 
 @media (prefers-color-scheme: dark) {
