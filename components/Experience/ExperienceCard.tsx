@@ -120,7 +120,7 @@ export default function ExperienceCard(props: CommonItem){
     <ul className="list-disc list-inside pl-4 [&_strong]:font-semibold">
       {props.bullets?.map((bullet, index) => (
         <li key={index} className="text-sm leading-tight my-1">
-          <MarkdownInline className="relative left-[-10px]" content={bullet}/>
+          <MarkdownInline className="relative left-[-5px]" content={bullet}/>
         </li>
       ))}
     </ul>
