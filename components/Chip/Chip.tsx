@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 
 interface Props {
   children?: ReactNode;
-  className?: String;
+  className?: string;
 }
 
 export default function Chip(props: Props) {

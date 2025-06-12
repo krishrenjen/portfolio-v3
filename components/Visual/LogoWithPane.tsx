@@ -18,7 +18,7 @@ export default function LogoWithPane({
         backgroundColor: background,
         border: `${size / 2}px solid ${border}`,
         padding: `${size / 6}rem`,
-        borderRadius: `${size * 2}px`,
+        borderRadius: `${size * 3}px`,
         display: 'inline-block',
       }}
     >

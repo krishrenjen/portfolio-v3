@@ -4,14 +4,23 @@
     {"name": "TypeScript", 
     "color": "0,122,204",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
-    {"name": "JavaScript",
-    "color": "240,219,79",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"},
     {"name": "Python",
-    "color": "54,113,161",
+    "color": "255,211,67",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg"},
     {"name": "Java",
     "color": "197,85,85",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"}
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"},
+    {"name": "C#",
+    "color": "149,61,172",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg"},
+    {"name": "NextJS",
+    "color": "255,255,255",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
+    {"name": ".NET Core",
+    "color": "98,54,151",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg"},
+    {"name": "SQL Server",
+    "color": "217,65,50",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"}
   ]
 }

@@ -1,29 +1,33 @@
 [
    {
-        "id": "sb-attendance-app",
-        "title":"SB Attendance App",
-        "title_tags": ["Website"],
-        "type": "Website",
-        "short_description": "NextJS website for club attendance tracking",
-        "description":"Created a NextJS website that allows students to scan a QR code to track their club and event attendance. It also allows club officers to create check in events, view all students who have checked in. They can also restrict login to students located at the school using IP and geolocation. They can also export data to a spreadsheet for easy viewing and logging. Students can view all their attendance for a specific club as well.",
-        "date": "May 2024",
-        "primaryHref": "https://github.com/krishrenjen/sbhs-club-attendance",
-        "links": [
-            {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/sbhs-club-attendance", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"}
+        "id": "staticapi",
+        "current": true,
+        "shortTitle": "StaticAPI",
+        "title":"StaticAPI - Static Content API Generator",
+        "title_tags": ["Webapp", "Database"],
+        "images": [
+            
         ],
+        "short_description": "A webapp that allows users to create a static content API endpoint.",
+        "description":"A webapp that allows users to use a visual editor *(or file editor)* to create a static endpoint to serve JSON files for their application. \n ## Why?\nServing static content is a common use case for many applications, such as this portfolio where you want to be able to edit content without having to redeploy the application. This webapp allows you to do just that, by allowing you to create a static content API endpoint that can be used in your applications.\n\n## How?\nThe webapp allows you to create a static content API endpoint by providing a simple interface to create and edit content. The content is stored in a PostgreSQL database, and the API endpoint is generated using NextJS and Prisma.",
+        "date": "June 2025 - Present",
         "tags":[
-            {"title": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
-            {"title": "NextJS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
-            {"title": "PostgresSQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"},
-            {"title": "Prisma", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"}
+            {"title": "TypeScript", "color": "0,122,204", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
+            {"title": "NextJS", "color": "255,255,255", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
+            {"title": "PostgreSQL", "color": "51,103,145", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"},
+            {"title": "Prisma", "color": "45,55,72", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"}
         ]
     },
     {
-        "id": "sb-attendance-app-2",
-        "title":"SB Attendance App",
-        "title_tags": ["Website"],
-        "type": "Website",
-        "short_description": "NextJS website for club attendance tracking. Ima keep yapping here until it goes to a few more lines so that way I can test the scaling to see how it works. :)",
+        "id": "sb-attendance-app",
+        "shortTitle": "Attendance Webapp",
+        "current": false,
+        "title":"South Brunswick High School Attendance Webapp",
+        "title_tags": ["Website", "Webapp"],
+        "images": [
+            
+        ],
+        "short_description": "A webapp that allows club officers to track student attendance with IP and geolocation restrictions",
         "description":"Created a NextJS website that allows students to scan a QR code to track their club and event attendance. It also allows club officers to create check in events, view all students who have checked in. They can also restrict login to students located at the school using IP and geolocation. They can also export data to a spreadsheet for easy viewing and logging. Students can view all their attendance for a specific club as well.",
         "date": "May 2024",
         "primaryHref": "https://github.com/krishrenjen/sbhs-club-attendance",
@@ -31,10 +35,69 @@
             {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/sbhs-club-attendance", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"}
         ],
         "tags":[
-            {"title": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
-            {"title": "NextJS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
-            {"title": "PostgresSQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"},
-            {"title": "Prisma", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"}
+            {"title": "TypeScript", "color": "0,122,204", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
+            {"title": "NextJS", "color": "255,255,255", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
+            {"title": "PostgreSQL", "color": "51,103,145", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"},
+            {"title": "Prisma", "color": "45,55,72", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"}
+        ]
+    },
+    {
+        "id": "circlize-app",
+        "shortTitle": "Circlize",
+        "title":"Circlize Mobile Android App",
+        "title_tags": ["Android", "Mobile App"],
+        "images": [
+            
+        ],
+        "short_description": "Android app that allows users to create or join Circles, post messages, and change their user details.",
+        "description":"An Android app that allows users to create or join Circles, in which they can then post messages to the stream. Additionally, they can change their username, and profile pictures. Features a login and signup screen as well. Connected to Flask server through a Rest API, which would then connect to the Firebase database to write and read data.",
+        "date": "June 2023",
+        "primaryHref": "https://github.com/krishrenjen/sbhs-club-attendance",
+        "links": [
+            
+        ],
+        "tags":[
+            {"title": "Java",
+            "color": "197,85,85",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"},
+            {"title": "Android (Studio)",
+            "color": "164,196,57",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"},
+            {"title": "Firebase",
+            "color": "255,160,0",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"},
+            {"title": "Flask",
+            "color": "255, 255, 255",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"},
+            {"title": "Python",
+            "color": "255,211,67",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg"}
+        ]
+    },
+    {
+        "id": "weather-app",
+        "shortTitle": "Weather App",
+        "title":"Weather Mobile Android App",
+        "title_tags": ["Android", "Mobile App"],
+        "images": [
+            
+        ],
+        "short_description": "Android app that allows users to view the weather according to a Zip Code.",
+        "description":"Project in mobile application class. Developed an Android weather app that utilized the OpenWeather API to display weather information. Design inspired by the Apple weather app.",
+        "date": "Jan 2023",
+        "primaryHref": "https://github.com/krishrenjen/crystal_weather",
+        "links": [
+            {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/crystal_weather", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"},
+            {"text": "Video Walkthrough", "href": "https://drive.google.com/file/d/1St4PNV4kq08qbGj35996Z6zBJxuZtf3A/view?usp=sharing"}
+        ],
+        "tags":[
+            {"title": "Java",
+            "color": "197,85,85",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"},
+            {"title": "Android (Studio)",
+            "color": "164,196,57",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"}
         ]
     }
+    
 ]

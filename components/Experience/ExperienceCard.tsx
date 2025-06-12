@@ -3,9 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Chip from "../Chip/Chip";
-import { marked } from "marked";
 import clsx from "clsx";
-import { motion, AnimatePresence } from 'framer-motion';
 import MarkdownInline from "../Markdown/MarkdownInline";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 

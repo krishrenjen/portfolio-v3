@@ -9,6 +9,7 @@ import { Skills } from '@/common/types/Skills';
 import SkillChip from '@/components/Chip/SkillChip';
 import ProjectOverview from '@/components/Project/ProjectOverview';
 import MarkdownInline from '@/components/Markdown/MarkdownInline';
+import Link from 'next/link';
 
 
 
@@ -20,7 +21,6 @@ export default async function Home() {
   const skills : Skills = await getSkills();
   const projects : Project[] = await getProjects();
   const staticText = await getStaticText();
-  console.log("staticText:", staticText);
     
   const tabs = [
     {
@@ -40,8 +40,8 @@ export default async function Home() {
   
   return (
     <>
-      <div className="mx-auto mt-6 max-w-2xl px-6 flex flex-col items-center justify-center bg-[#0a0a0a70] backdrop-filter backdrop-blur-lg backdrop-opacity-50">
-        <div className="h-fit flex flex-col items-center justify-start py-14 gap-6 w-full">
+      <div className="mx-auto mt-3 max-w-2xl px-6 flex flex-col items-center justify-center bg-[#0a0a0a70] backdrop-filter backdrop-blur-lg backdrop-opacity-50">
+        <div className="h-fit pb-14 flex flex-col items-center justify-start gap-6 w-full">
           
           {/* Photo + name section */}
           <div className="flex flex-row items-center justify-start gap-0.5 w-full">
@@ -56,7 +56,7 @@ export default async function Home() {
             </div>
             <div className="flex flex-col items-start justify-center gap-2">
                 <div className='flex flex-col items-start justify-center'>
-                  <h1 className="font-light text-2xl">Hey there! I'm</h1>
+                  <h1 className="font-light text-2xl">Hey there! I&apos;m</h1>
                   <h1 className="font-semibold text-3xl">Krish Renjen</h1>
                 </div>
                 <div className="flex flex-row items-center justify-start gap-2">
@@ -74,25 +74,25 @@ export default async function Home() {
           {/* Socials section */}
           <div className="min-w-full">
             <div className="flex flex-col items-center justify-center gap-2 min-w-full">
-              <div className="flex flex-row grow items-center justify-center gap-2 min-w-full">
+              <div className="flex flex-row grow items-stretch justify-center gap-2 min-w-full">
                 <IconLink
                   icon="/social_logos/githublogo.svg"
                   text="krishrenjen"
                   href="https://github.com/krishrenjen"
-                  className="grow flex-1 basis-0 border-2 border-[#1f1e1e]"
+                  className="grow flex-1 basis-0 border-2 border-[#1f1e1e] h-full"
                 />
                 <IconLink
                   icon="/social_logos/linkedinlogo.svg"
                   text="in/krishrenjen"
                   href="https://linkedin.com/in/krishrenjen"
-                  className="grow flex-1 basis-0 border-2 border-[#1f1e1e]"
+                  className="grow flex-1 basis-0 border-2 border-[#1f1e1e] h-full"
                 />
                 <IconLink
                   icon="/social_logos/resume.svg"
-                  icon_scale={0.9}
+                  icon_scale={1}
                   text="Resume"
                   href="/resume.pdf"
-                  className="grow flex-1 basis-0 border-2 border-[#1f1e1e]"
+                  className="grow flex-1 basis-0 border-2 border-[#1f1e1e] h-full"
                 />
               </div>
                 <IconLink
@@ -112,7 +112,7 @@ export default async function Home() {
 
           {/* Skills section */}
           <div className="w-full mt-6">
-            <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+            <h2 className="text-2xl font-semibold mb-4">Top Skills</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
               {skills.skills_list.slice(0, skills.display).map((skill, index) => (
               <SkillChip key={index} skill={skill} />
@@ -122,12 +122,24 @@ export default async function Home() {
 
           {/* Projects section */}
           <div className="w-full mt-6">
-            <h2 className="text-2xl font-semibold mb-4">Projects</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {projects.map((project, index) => (
-                  <ProjectOverview key={index} project={project} />
-              ))}
+            <div className="flex flex-row items-center justify-between mb-4">
+              <h2 className="text-2xl font-semibold">Pinned Projects</h2>
+              {projects.length > 2 && (
+              <div className="text-right align-middle h-full">
+                <Link href="/projects" className="text-brand-pink font-medium group">
+                  View {projects.length - 2} More <span className="inline-block group-hover:translate-x-1 transition-transform duration-300">→</span>
+                </Link>
+              </div>
+            )}
             </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {projects.slice(0, 2).map((project, index) => (
+                  <ProjectOverview key={index} project={project} />
+                ))}
+            </div>
+
+            
           </div>
         </div>
       </div>

@@ -7,11 +7,11 @@ const urlRoute = "https://krishrenjen.github.io/portfolio-data";
 const static_text_revalidate = 10 * 60; // 10 minutes
 const projects_revalidate = 5 * 60; // 5 minutes
 const experience_revalidate = 5 * 60; // 5 minutes
-const production = false;
+const devMode = process.env.DEVMODE === 'true';
 
 
 export async function getStaticText(){
-  if(!production){
+  if(devMode){
     return text;
   }
   try {
@@ -30,7 +30,7 @@ export async function getStaticText(){
 }
 
 export async function getExperience() {
-  if(!production){
+  if(devMode){
     return experience;
   }
   
@@ -50,7 +50,7 @@ export async function getExperience() {
 }
 
 export async function getSkills(){
-  if(!production){
+  if(devMode){
     return skills;
   }
   
@@ -70,7 +70,7 @@ export async function getSkills(){
 }
 
 export async function getProjects(){
-  if(!production){
+  if(devMode){
     return projects;
   }
   
