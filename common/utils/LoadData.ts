@@ -16,7 +16,7 @@ export async function getStaticText(){
   }
   try {
     const response = await fetch(`${urlRoute}/data/text.json`, {
-      next: { revalidate: static_text_revalidate }, 
+      next: { revalidate: static_text_revalidate, tags: ['text'] }, // Revalidate every 10 minutes
     });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -36,7 +36,7 @@ export async function getExperience() {
   
   try {
     const response = await fetch(`${urlRoute}/data/experience.json`, {
-      next: { revalidate: experience_revalidate }, 
+      next: { revalidate: experience_revalidate, tags: ['experience'] }, // Revalidate every 5 minutes
     });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -56,7 +56,7 @@ export async function getSkills(){
   
   try {
     const response = await fetch(`${urlRoute}/data/skills.json`, {
-      next: { revalidate: projects_revalidate }, 
+      next: { revalidate: projects_revalidate, tags: ['skills'] }, // Revalidate every 5 minutes
     });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -76,7 +76,7 @@ export async function getProjects(){
   
   try {
     const response = await fetch(`${urlRoute}/data/projects.json`, {
-      next: { revalidate: projects_revalidate }, 
+      next: { revalidate: projects_revalidate, tags: ['projects'] }, // Revalidate every 5 minutes
     });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

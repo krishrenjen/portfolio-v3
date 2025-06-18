@@ -31,7 +31,7 @@ export default function ProjectOverview(props : ProjectOverviewProps){
         
         
         <h1 className="text-xl font-medium">{props.project.shortTitle ?? props.project.title}</h1>
-        <div className="flex flex-row items-center justify-start gap-2">
+        <div className="flex flex-row items-center justify-start gap-2 cursor-default">
             {props.project.tags.map((tag, index) => (
               <Tooltip key={index}>
                 <TooltipTrigger><Logo key={index} src={`${tag.icon}`} size={1.5} rgb="92, 91, 91" /></TooltipTrigger>
