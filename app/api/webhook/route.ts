@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateAllTags } from '@/lib/revalidate';
+import { sendWebhook } from '@/lib/webhook';
 
 export async function POST(req: NextRequest) {
   const secret = req.nextUrl.searchParams.get('secret');
@@ -6,71 +8,50 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ message: 'Invalid token' }, { status: 401 });
   }
 
-  const webhookURL = process.env.WEBHOOK_URL;
+  const eventType = req.headers.get('x-github-event');
 
-  if (!webhookURL) {
-    return NextResponse.json({ message: 'Webhook URL not configured' }, { status: 500 });
+  if (!eventType || !['push', 'page_build'].includes(eventType)) {
+    return NextResponse.json({ message: 'Unsupported GitHub event' }, { status: 400 });
   }
 
-  // check request params, either start or complete
-  const action = req.nextUrl.searchParams.get('action');
-  if (!action || (action !== 'start' && action !== 'complete')) {
-    return NextResponse.json({ message: 'Invalid action parameter' }, { status: 400 });
-  }
-
-  const payload_start = {
-    "content": "<@776551180444631041>",
-    "tts": false,
-    "embeds": [
-      {
-        "id": 10674342,
-        "title": "Status",
-        "description": "GitHub Pages site is starting to be built.",
-        "color": 16776192,
-        "fields": []
-      }
-    ],
-    "components": [],
-    "actions": {},
-    "flags": 0
-  }
-
-  const payload_complete = {
-    "content": "<@776551180444631041>",
-    "tts": false,
-    "embeds": [
-      {
-        "id": 10674342,
-        "title": "Status",
-        "description": "GitHub Pages site finished building.",
-        "color": 65305,
-        "fields": []
-      }
-    ],
-    "components": [],
-    "actions": {},
-    "flags": 0
-  }
-
-  const payload = action === 'start' ? payload_start : payload_complete;
+  const messages = {
+    start: {
+      msg: 'GitHub Pages site is starting to be built.',
+      color: 16776192,
+    },
+    complete: {
+      msg: 'GitHub Pages site finished building.',
+      color: 65305,
+    },
+    revalidate: {
+      msg: 'Data revalidation completed via GitHub webhook.',
+      color: 6655,
+    },
+  };
 
   try {
-    const response = await fetch(webhookURL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(payload),
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+    if (eventType === 'push') {
+      const { msg, color } = messages.start;
+      await sendWebhook(msg, color);
+      return NextResponse.json({ message: 'Start webhook sent (push event)' });
     }
 
-    return NextResponse.json({ message: 'Webhook triggered successfully', action });
+    if (eventType === 'page_build') {
+      const { msg: completeMsg, color: completeColor } = messages.complete;
+      await sendWebhook(completeMsg, completeColor);
+
+      const tags = await revalidateAllTags();
+
+      const { msg: revalMsg, color: revalColor } = messages.revalidate;
+      await sendWebhook(revalMsg, revalColor);
+
+      return NextResponse.json({
+        message: 'Build complete and revalidation triggered',
+        tags,
+      });
+    }
   } catch (error) {
-    console.error('Error triggering webhook:', error);
-    return NextResponse.json({ message: 'Error triggering webhook' }, { status: 500 });
+    console.error('Error handling GitHub webhook:', error);
+    return NextResponse.json({ message: 'Webhook handling failed' }, { status: 500 });
   }
-  
 }
