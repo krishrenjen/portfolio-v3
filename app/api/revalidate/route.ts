@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { revalidateTag } from 'next/cache'; // ✅ Needed for tag revalidation
+import { revalidateTag } from 'next/cache';
 
 export async function POST(req: NextRequest) {
   const secret = req.nextUrl.searchParams.get('secret');
@@ -12,6 +12,34 @@ export async function POST(req: NextRequest) {
   try {
     for (const tag of tags) {
       await revalidateTag(tag); 
+    }
+
+    const webhookURL = process.env.WEBHOOK_URL;
+    if(webhookURL){
+      const payload = {
+        content: "<@776551180444631041>",
+        tts: false,
+        embeds: [
+          {
+            id: 10674342,
+            title: "Status",
+            description: "Data revalidation completed successfully.",
+            color: 6655,
+            fields: []
+          }
+        ],
+        components: [],
+        actions: {},
+        flags: 0
+      };
+
+      await fetch(webhookURL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
     }
 
     return NextResponse.json({ revalidated: true, tags });

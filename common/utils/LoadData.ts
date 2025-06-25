@@ -4,9 +4,9 @@ import projects from "@/common/local_data/projects.json";
 import text from "@/common/local_data/text.json";
 
 const urlRoute = "https://krishrenjen.github.io/portfolio-data";
-const static_text_revalidate = 10 * 60; // 10 minutes
-const projects_revalidate = 5 * 60; // 5 minutes
-const experience_revalidate = 5 * 60; // 5 minutes
+const static_text_revalidate = 60 * 60; // 60 minutes
+const projects_revalidate = 30 * 60; // 30 minutes
+const experience_revalidate = 30 * 60; // 30 minutes
 const devMode = process.env.DEVMODE === 'true';
 
 
