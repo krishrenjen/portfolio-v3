@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
       color: 65305,
     },
     revalidate: {
-      msg: 'Data revalidation completed via GitHub webhook.',
+      msg: 'Data revalidation completed',
       color: 6655,
     },
   };
