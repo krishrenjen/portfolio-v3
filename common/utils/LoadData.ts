@@ -7,16 +7,15 @@ const urlRoute = "https://krishrenjen.github.io/portfolio-data";
 const static_text_revalidate = 60 * 60; // 60 minutes
 const projects_revalidate = 30 * 60; // 30 minutes
 const experience_revalidate = 30 * 60; // 30 minutes
-const devMode = process.env.DEVMODE === 'true';
+const devMode = process.env.DEVMODE === "true";
 
-
-export async function getStaticText(){
-  if(devMode){
+export async function getStaticText() {
+  if (devMode) {
     return text;
   }
   try {
     const response = await fetch(`${urlRoute}/data/text.json`, {
-      next: { revalidate: static_text_revalidate, tags: ['text'] }, // Revalidate every 10 minutes
+      next: { revalidate: static_text_revalidate, tags: ["text"] },
     });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -30,13 +29,15 @@ export async function getStaticText(){
 }
 
 export async function getExperience() {
-  if(devMode){
+  console.log("Fetching experience data...");
+  if (devMode) {
+    console.log(experience);
     return experience;
   }
-  
+
   try {
     const response = await fetch(`${urlRoute}/data/experience.json`, {
-      next: { revalidate: experience_revalidate, tags: ['experience'] }, // Revalidate every 5 minutes
+      next: { revalidate: experience_revalidate, tags: ["experience"] },
     });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -49,14 +50,14 @@ export async function getExperience() {
   }
 }
 
-export async function getSkills(){
-  if(devMode){
+export async function getSkills() {
+  if (devMode) {
     return skills;
   }
-  
+
   try {
     const response = await fetch(`${urlRoute}/data/skills.json`, {
-      next: { revalidate: projects_revalidate, tags: ['skills'] }, // Revalidate every 5 minutes
+      next: { revalidate: projects_revalidate, tags: ["skills"] },
     });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -69,14 +70,14 @@ export async function getSkills(){
   }
 }
 
-export async function getProjects(){
-  if(devMode){
+export async function getProjects() {
+  if (devMode) {
     return projects;
   }
-  
+
   try {
     const response = await fetch(`${urlRoute}/data/projects.json`, {
-      next: { revalidate: projects_revalidate, tags: ['projects'] }, // Revalidate every 5 minutes
+      next: { revalidate: projects_revalidate, tags: ["projects"] },
     });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

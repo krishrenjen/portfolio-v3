@@ -6,40 +6,48 @@
       "date": "May 2025 - Aug 2025",
       "logo": "/exp_images/moonpreneur_logo.png",
       "bullets": [
-        "**Developed full-stack features** in `.NET Core` and `Next.js`, contributing to **production applications** in an **Agile** environment.",
-        "Built **RESTful APIs** with **Clean Architecture**, `JWT` authentication, and **role-based access control**.",
-        "Designed **responsive UIs** using `Next.js`, `JavaScript`, and `HTML/CSS`; integrated frontend with backend services.",
-        "Wrote **optimized queries** and **stored procedures** in `SQL Server` using `Entity Framework Core`.",
-        "Collaborated via `Git`, `Jira`, `Azure DevOps`, and deployed through **CI/CD pipelines**."
+        "Built a **browser-based circuit and microcontroller simulator**, enabling interactive hardware experimentation with drag-and-drop components and real-time execution.",
+        "Led the **migration of the company website** from `.NET` to `Next.js`, improving scalability, maintainability, and SEO performance.",
+        "Developed and deployed **full-stack features** in `.NET Core` and `Next.js` with responsive UIs styled using `TailwindCSS`.",
+        "Implemented **RESTful APIs** with `JWT` authentication and **role-based access control**, securing sensitive user data.",
+        "Wrote **optimized SQL queries** and **stored procedures** in `SQL Server` using `Entity Framework Core` to enhance backend performance."
       ],
       "primaryHref": "https://moonpreneur.com/",
       "tags": [
-        { "title": "Typescript", "type": "Language" },
+        { "title": "TypeScript", "type": "Language" },
         { "title": ".NET Core", "type": "Tool" },
-        { "title": "Next.js", "type": "Tool" },
-        { "title": "SQL Server", "type": "Other" },
+        { "title": "Next.JS", "type": "Tool" },
+        { "title": "SQL Server", "type": "Tool" },
         { "title": "Entity Framework Core", "type": "Tool" },
         { "title": "C#", "type": "Language" },
-        { "title": "Next.js", "type": "Tool" },
         { "title": "TailwindCSS", "type": "Tool" },
         { "title": "Git", "type": "Tool" }
       ]
-    },
+    }
+  ],
+  "volunteer": [
     {
       "company": "Code 4 Tomorrow",
       "title": "Website Design Member",
       "date": "Jul 2023 - Jun 2024",
       "logo": "/exp_images/c4t_logo.jpg",
       "bullets": [
-        "Maintained and updated a Next.js website with hundreds of visitors",
-        "Collaborated in a team of 2 developers and collaborated with other teams to implement new features",
-        "Queried data from Notion database and Contentful CMS to display dynamic content"
+        "Maintained and updated a **Next.js website** serving hundreds of monthly visitors.",
+        "Implemented **dynamic content features** by integrating `Notion` databases and `Contentful CMS`.",
+        "Collaborated in a **2-person developer team** and partnered with non-technical teams to deliver features.",
+        "Ensured **site performance, responsiveness, and accessibility**, supporting the nonprofit’s mission."
       ],
       "primaryHref": "https://www.code4tomorrow.org",
-      "links": [{ "text": "GitHub Repository", "href": "https://github.com/code4tomorrow/c4t-web", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" }],
+      "links": [
+        {
+          "text": "GitHub Repository",
+          "href": "https://github.com/code4tomorrow/c4t-web",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+        }
+      ],
       "tags": [
-        { "title": "Typescript", "type": "Language" },
-        { "title": "Next.js", "type": "Tool" },
+        { "title": "TypeScript", "type": "Language" },
+        { "title": "Next.JS", "type": "Tool" },
         { "title": "TailwindCSS", "type": "Tool" },
         { "title": "Vercel", "type": "Tool" }
       ]
@@ -51,17 +59,24 @@
       "logo": "/exp_images/coderdojo_logo.png",
       "primaryHref": "https://sbdojo.github.io/about/",
       "bullets": [
-        "Co-founded the South Brunswick chapter of CoderDojo to provide free, community-based programming education for students.",
-        "Designed and led engaging lessons in Python by building interactive text adventure games to teach logic and control flow.",
-        "Taught real-world applications of Python by guiding students through creating chatbots with the discord.py library.",
-        "Introduced web development fundamentals by helping students build personalized websites using HTML and CSS based on their individual interests."
+        "Co-founded the **South Brunswick chapter of CoderDojo**, providing free programming education for students.",
+        "Designed and taught **Python lessons** through projects like **interactive text adventure games**.",
+        "Guided students in building **Discord bots** using `discord.py`, demonstrating real-world programming applications.",
+        "Introduced **web development basics** (`HTML`, `CSS`) and helped students create personalized websites."
       ],
       "links": [
-        { "text": "Lessons", "href": "https://sbdojo.gitbook.io/sushi-cards/v/2021-2022/session-1/session-1-info", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitbook/gitbook-original.svg" },
-        { "text": "Instagram", "href": "https://www.instagram.com/sb.coderdojo/", "icon": "/social_logos/instagramlogo.svg" }
+        {
+          "text": "Lessons",
+          "href": "https://sbdojo.gitbook.io/sushi-cards/v/2021-2022/session-1/session-1-info",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitbook/gitbook-original.svg"
+        },
+        {
+          "text": "Instagram",
+          "href": "https://www.instagram.com/sb.coderdojo/",
+          "icon": "/social_logos/instagramlogo.svg"
+        }
       ],
       "tags": [
-        { "title": "Volunteer" },
         { "title": "Python", "type": "Language" },
         { "title": "HTML5", "type": "Language" },
         { "title": "CSS3", "type": "Language" },
@@ -74,7 +89,7 @@
     {
       "school": "Rutgers University - New Brunswick",
       "date": "Sep 2024 - May 2028 (Expected)",
-      "degree": "B.S | Computer Science and Statistics-Math (Joint Major)",
+      "degree": "B.S. in Computer Science; B.A. in Statistics–Math (Joint Major)",
       "logo": "/exp_images/rutgers_logo.png",
       "primaryHref": "https://www.rutgers.edu/",
       "bullets": [
@@ -83,27 +98,73 @@
       ],
       "courses": {
         "Computer Science": [
-          {"name": "Data Structures",
-          "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-112-data-structures",
-          "highlight": true},
-          {"name": "Computer Architecture",
-          "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-211-computer-architecture"},
-          {"name": "Discrete Structures I",
-          "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-205-introduction-to-discrete-structures-i",
-          "highlight": true}
+          {
+            "name": "Data Structures",
+            "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-112-data-structures",
+            "highlight": true
+          },
+          {
+            "name": "Computer Architecture",
+            "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-211-computer-architecture",
+            "highlight": true
+          },
+          {
+            "name": "Design and Analysis of Computer Algorithms",
+            "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-344-design-and-analysis-of-computer-algorithms",
+            "inProgress": true,
+            "highlight": true
+          },
+          {
+            "name": "Discrete Structures I",
+            "href": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-205-introduction-to-discrete-structures-i"
+          }
         ],
-        "Math": ["Linear Algebra", 
-        {"name": "Multivariable Calculus", "highlight": true}, {
-          "name": "Introduction to Mathematical Reasoning",
-          "inProgress": true
-        }, {
-          "name": "Math Theory of Probability",
-          "inProgress": true
-        }],
-        "Statistics": [{
-          "name": "Statistics II",
-          "inProgress": true
-        }]
+        "Math": [
+          {
+            "name": "Linear Algebra",
+            "href": "https://math.rutgers.edu/academics/undergraduate/course-descriptions/948-01-640-250-introductory-linear-algebra"
+          },
+          {
+            "name": "Multivariable Calculus",
+            "highlight": true,
+            "href": "https://math.rutgers.edu/component/content/article/949-01-640-251-multivariable-calculus"
+          },
+          {
+            "name": "Differential Equations",
+            "inProgress": true,
+            "href": "https://math.rutgers.edu/academics/undergraduate/course-descriptions/950-01-640-252-elementary-differential-equations"
+          },
+          {
+            "name": "Introduction to Mathematical Reasoning",
+            "href": "https://www.math.rutgers.edu/academics/undergraduate/course-descriptions/954-01-640-300-introduction-to-mathematical-reasoning"
+          },
+          {
+            "name": "Math Theory of Probability",
+            "href": "https://math.rutgers.edu/academics/undergraduate/course-descriptions/989-01-640-477-mathematical-theory-of-probability"
+          },
+          {
+            "name": "Math Theory of Statistics",
+            "href": "https://math.rutgers.edu/component/content/article/991-01-640-481-mathematical-theory-of-statistics",
+            "inProgress": true,
+            "highlight": true
+          }
+        ],
+        "Statistics": [
+          {
+            "name": "Statistics II",
+            "href": "https://statistics.rutgers.edu/academics/undergraduate/course-descriptions/962-01-650-302-statistics-ii"
+          },
+          {
+            "name": "Applied Multivariate Analysis",
+            "inProgress": true,
+            "href": "https://statistics.rutgers.edu/course-descriptions/course-synopses/517-01-960-467-applied-multivariate-analysis-3"
+          },
+          {
+            "name": "Introduction to Experimental Design",
+            "inProgress": true,
+            "href": "https://statistics.rutgers.edu/course-descriptions/course-synopses/522-01-960-490-introduction-to-experimental-design-3"
+          }
+        ]
       }
     },
     {
@@ -111,24 +172,22 @@
       "date": "Sep 2020 - Jun 2024",
       "degree": "High School Diploma",
       "logo": "/exp_images/sbhs_logo.jpg",
-      "bullets": [
-        "GPA: 4.4 *(weighted)*, 4.0 *(unweighted)*"
-      ],
+      "primaryHref": "https://sbhs.sbschools.org/",
+      "bullets": ["GPA: 4.4 *(weighted)*, 4.0 *(unweighted)*"],
       "courses": {
         "Computer Science": [
           "AP Computer Science A",
-          { "name": "Mobile App Development", "highlight": true },
+          { "name": "Android App Development", "highlight": true },
           { "name": "VR & Game Design", "highlight": true },
           "Data Structures",
           "Computer Science Capstone"
         ],
-        "Statistics": [
+        "Math": [
           { "name": "AP Statistics", "highlight": true },
           "AP Calculus BC"
         ]
       },
-      "tags": [
-      ]
+      "tags": []
     }
   ]
 }
