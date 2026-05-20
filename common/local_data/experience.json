@@ -5,6 +5,7 @@
       "title": "Software Engineer Intern",
       "date": "May 2025 - Aug 2025",
       "logo": "/exp_images/moonpreneur_logo.png",
+      "type": "2025 Internship",
       "bullets": [
         "Built a **browser-based circuit and microcontroller simulator**, enabling interactive hardware experimentation with drag-and-drop components and real-time execution.",
         "Led the **migration of the company website** from `.NET` to `Next.js`, improving scalability, maintainability, and SEO performance.",

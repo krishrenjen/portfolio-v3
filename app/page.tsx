@@ -30,7 +30,7 @@ export default async function Home() {
 
   const tabs = [
     {
-      label: "Work Experience",
+      label: "Experience",
       content: work.map((item: CommonItem, index: number) => (
         <ExperienceCard key={index} {...item} />
       )),
@@ -42,7 +42,7 @@ export default async function Home() {
       )),
     },
     {
-      label: "Volunteer",
+      label: "Leadership",
       content: volunteer.map((item: CommonItem, index: number) => (
         <ExperienceCard key={index} {...item} />
       )),
@@ -55,13 +55,13 @@ export default async function Home() {
         <div className="h-fit pb-14 flex flex-col items-center justify-start gap-6 w-full">
           {/* Photo + name section */}
           <div className="flex flex-row items-center justify-start gap-0.5 w-full">
-            <div className="w-[150px] h-[150px] flex items-center justify-center">
+            <div className="w-[200px] h-[200px] flex items-center justify-center">
               <Image
-                src="/profilepicture.jpg"
+                src="/pfp.png"
                 alt="profile"
-                width={150}
-                height={150}
-                className="w-24 h-24 object-cover rounded-full border-brand-pink border-opacity-50 block p-0.5 border-2"
+                width={200}
+                height={200}
+                className="w-36 h-36 object-cover rounded-full border-brand-pink border-opacity-50 block p-0.5 border-2"
               />
             </div>
             <div className="flex flex-col items-start justify-center gap-2">
