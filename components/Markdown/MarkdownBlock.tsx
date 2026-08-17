@@ -3,6 +3,14 @@
 
 import clsx from "clsx";
 import { marked } from "marked";
+import markedKatex from "marked-katex-extension";
+import "katex/dist/katex.min.css";
+
+marked.use(
+  markedKatex({
+    throwOnError: false,
+  }),
+);
 
 marked.setOptions({
   breaks: true,
@@ -18,20 +26,21 @@ const markdownStyles = clsx(
   "[&_h1]:text-3xl [&_h1]:font-medium [&_h2]:text-2xl [&_h2]:font-medium [&_h3]:text-xl [&_h4]:text-lg",
   "[&_pre]:bg-gray-100 [&_pre]:p-3 [&_pre]:rounded",
   "[&_code]:font-mono [&_code]:text-sm",
-  "[&_blockquote]:border-l-4 [&_blockquote]:pl-4 [&_blockquote]:text-gray-600"
+  "[&_blockquote]:border-l-4 [&_blockquote]:pl-4 [&_blockquote]:text-gray-600",
 );
 
 export default function MarkdownBlock({
   content,
+  className,
 }: {
   content: string;
   className?: string;
 }) {
   return (
     <div
-      className={markdownStyles}
+      className={clsx(markdownStyles, className)}
       dangerouslySetInnerHTML={{
-        __html: marked.parse(content),
+        __html: marked.parse(content) as string,
       }}
     />
   );

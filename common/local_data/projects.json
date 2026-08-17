@@ -1,103 +1,205 @@
 [
-   {
-        "id": "staticapi",
-        "current": true,
-        "shortTitle": "StaticAPI",
-        "title":"StaticAPI - Static Content API Generator",
-        "title_tags": ["Webapp", "Database"],
-        "images": [
-            
-        ],
-        "short_description": "A webapp that allows users to create a static content API endpoint.",
-        "description":"A webapp that allows users to use a visual editor *(or file editor)* to create a static endpoint to serve JSON files for their application. \n ## Why?\nServing static content is a common use case for many applications, such as this portfolio where you want to be able to edit content without having to redeploy the application. This webapp allows you to do just that, by allowing you to create a static content API endpoint that can be used in your applications.\n\n## How?\nThe webapp allows you to create a static content API endpoint by providing a simple interface to create and edit content. The content is stored in a PostgreSQL database, and the API endpoint is generated using NextJS and Prisma.",
-        "date": "June 2025 - Present",
-        "tags":[
-            {"title": "TypeScript", "color": "0,122,204", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
-            {"title": "NextJS", "color": "255,255,255", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
-            {"title": "PostgreSQL", "color": "51,103,145", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"},
-            {"title": "Prisma", "color": "45,55,72", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"}
-        ]
-    },
-    {
-        "id": "sb-attendance-app",
-        "shortTitle": "Attendance Webapp",
-        "current": false,
-        "title":"South Brunswick High School Attendance Webapp",
-        "title_tags": ["Website", "Webapp"],
-        "images": [
-            
-        ],
-        "short_description": "A webapp that allows club officers to track student attendance with IP and geolocation restrictions",
-        "description":"Created a NextJS website that allows students to scan a QR code to track their club and event attendance. It also allows club officers to create check in events, view all students who have checked in. They can also restrict login to students located at the school using IP and geolocation. They can also export data to a spreadsheet for easy viewing and logging. Students can view all their attendance for a specific club as well.",
-        "date": "May 2024",
-        "primaryHref": "https://github.com/krishrenjen/sbhs-club-attendance",
-        "links": [
-            {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/sbhs-club-attendance", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"}
-        ],
-        "tags":[
-            {"title": "TypeScript", "color": "0,122,204", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"},
-            {"title": "NextJS", "color": "255,255,255", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"},
-            {"title": "PostgreSQL", "color": "51,103,145", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"},
-            {"title": "Prisma", "color": "45,55,72", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"}
-        ]
-    },
-    {
-        "id": "circlize-app",
-        "shortTitle": "Circlize",
-        "title":"Circlize Mobile Android App",
-        "title_tags": ["Android", "Mobile App"],
-        "images": [
-            
-        ],
-        "short_description": "Android app that allows users to create or join Circles, post messages, and change their user details.",
-        "description":"An Android app that allows users to create or join Circles, in which they can then post messages to the stream. Additionally, they can change their username, and profile pictures. Features a login and signup screen as well. Connected to Flask server through a Rest API, which would then connect to the Firebase database to write and read data.",
-        "date": "June 2023",
-        "primaryHref": "https://github.com/krishrenjen/sbhs-club-attendance",
-        "links": [
-            
-        ],
-        "tags":[
-            {"title": "Java",
-            "color": "197,85,85",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"},
-            {"title": "Android (Studio)",
-            "color": "164,196,57",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"},
-            {"title": "Firebase",
-            "color": "255,160,0",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"},
-            {"title": "Flask",
-            "color": "255, 255, 255",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"},
-            {"title": "Python",
-            "color": "255,211,67",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg"}
-        ]
-    },
-    {
-        "id": "weather-app",
-        "shortTitle": "Weather App",
-        "title":"Weather Mobile Android App",
-        "title_tags": ["Android", "Mobile App"],
-        "images": [
-            
-        ],
-        "short_description": "Android app that allows users to view the weather according to a Zip Code.",
-        "description":"Project in mobile application class. Developed an Android weather app that utilized the OpenWeather API to display weather information. Design inspired by the Apple weather app.",
-        "date": "Jan 2023",
-        "primaryHref": "https://github.com/krishrenjen/crystal_weather",
-        "links": [
-            {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/crystal_weather", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"},
-            {"text": "Video Walkthrough", "href": "https://drive.google.com/file/d/1St4PNV4kq08qbGj35996Z6zBJxuZtf3A/view?usp=sharing"}
-        ],
-        "tags":[
-            {"title": "Java",
-            "color": "197,85,85",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"},
-            {"title": "Android (Studio)",
-            "color": "164,196,57",
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"}
-        ]
-    }
-    
+  {
+    "id": "loadbalancing",
+    "current": false,
+    "shortTitle": "Modeled Load Balancing",
+    "title": "Server Load Balancing Modeled with Differential Equations",
+    "title_tags": ["Research", "Simulation", "Distributed Systems"],
+    "images": [],
+    "short_description": "A research paper and interactive simulation modeling server queue dynamics and load balancing algorithms using continuous differential equations.",
+    "description": "An applied mathematics research paper and interactive dashboard exploring how continuous-time dynamical systems can model server task distribution and queue stability. Developed coupled differential equation models to evaluate classical balancing strategies under continuous task arrival and processing rates, backed by a numerical simulation dashboard.\n\n## Why?\nTraditional queueing theory often analyzes server workloads discretely, which can obscure macroscopic fluid-like behaviors during traffic shifts. Modeling server load continuously via differential equations enables closed-form asymptotic stability analysis, phase portraits, and direct evaluation of how routing algorithms behave under saturated compute capacities.\n\n## How?\n- **Mathematical Modeling & System Dynamics**\n  - Formulated autonomous continuous-time systems for decoupled, directly coupled, and $n$-server clusters.\n  - Modeled proportional and saturated resource allocation modes using bounding activation multipliers $S(x_i) = \\frac{x_i}{x_i+1}$.\n  - Derived trace-determinant stability criteria and verified negative eigenvalue asymptotic convergence for coupled clusters.\n\n- **Algorithm Analysis**\n  - Modeled continuous formulations of **Round Robin**, **Weighted Round Robin**, **Least Connections**, and **Weighted Least Connections**.\n  - Compared equilibrium convergence, proving how weighting arrival rates by expected wait time $W_i = \\frac{x_i}{\\mu_i}$ optimizes cluster-wide load distribution.\n\n- **Interactive Simulation & Tooling**\n  - Developed a standalone **Streamlit** visualizer utilizing the **Runge-Kutta 4th Order (RK4)** numerical integration method for high numerical stability.\n  - Rendered real-time phase portraits and time-series load trajectory curves under customizable arrival and coupling gain factors.",
+    "date": "April 2026",
+    "primaryHref": "/paper/load-balancing.pdf",
+    "links": [
+      {
+        "text": "Read Paper (PDF)",
+        "href": "/papers/load-balancing.pdf",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/devicon/devicon-plain.svg"
+      },
+      {
+        "text": "Live Simulation",
+        "href": "https://loadbalancing.streamlit.app/",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-plain.svg"
+      },
+      {
+        "text": "GitHub Repository",
+        "href": "https://github.com/krishrenjen/M252-Load-Balancing",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+      }
+    ],
+    "tags": [
+      {
+        "title": "Python",
+        "color": "255,211,67",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg"
+      },
+      {
+        "title": "Streamlit",
+        "color": "255,75,75",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-plain.svg"
+      },
+      {
+        "title": "LaTeX",
+        "color": "0,128,128",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg"
+      },
+      {
+        "title": "NumPy",
+        "color": "77,171,207",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+      }
+    ]
+  },
+  {
+    "id": "staticapi",
+    "current": false,
+    "shortTitle": "StaticAPI",
+    "title": "StaticAPI - Static Content API Generator",
+    "title_tags": ["Webapp", "Database"],
+    "images": [],
+    "short_description": "A webapp that allows users to create a static content API endpoint.",
+    "description": "A full-stack web application that enables developers to define static API endpoints without writing code. Users can create endpoints using either a **visual schema editor** or a **file-based editor**, and the platform automatically deploys these endpoints to serve JSON responses for use in client applications.\n\n## Why?\nServing static content is a common requirement for portfolios, prototypes, and applications that need lightweight backend functionality. Traditionally, making changes to static content requires a redeploy, which slows iteration. This platform removes that bottleneck by letting users dynamically create and update static JSON endpoints, enabling faster development and easier content management.\n\n## How?\n- **Frontend (Next.js + React)**\n  - Built a responsive UI with a drag-and-drop visual editor and JSON file editor.\n  - Provided real-time preview of API responses before deployment.\n\n- **Backend (Node.js + Prisma + PostgreSQL)**\n  - Designed schema to store endpoint definitions and versioned JSON content.\n  - Used **Prisma ORM** for type-safe database access, with raw SQL for performance-critical queries.\n\n- **Scalability & Performance**\n  - Added **Redis caching** for low-latency lookups of frequently requested endpoints.\n  - Integrated **RabbitMQ** to publish update events, ensuring API resolver and notification services stayed in sync.\n\n- **Deployment & Security**\n  - Deployed APIs with role-based access control and JWT authentication.\n  - Containerized with Docker for reproducible deployments.",
+    "date": "Jan 2026 - March 2026",
+    "tags": [
+      {
+        "title": "TypeScript",
+        "color": "0,122,204",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
+      },
+      {
+        "title": "NextJS",
+        "color": "255,255,255",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
+      },
+      {
+        "title": "PostgreSQL",
+        "color": "51,103,145",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"
+      },
+      {
+        "title": "Prisma",
+        "color": "45,55,72",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
+      },
+      {
+        "title": "Redis",
+        "color": "216,44,32",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-plain.svg"
+      }
+    ]
+  },
+  {
+    "id": "sb-attendance-app",
+    "shortTitle": "Attendance Webapp",
+    "current": false,
+    "title": "South Brunswick High School Attendance Webapp",
+    "title_tags": ["Website", "Webapp"],
+    "images": [],
+    "short_description": "A webapp that allows club officers to track student attendance with IP and geolocation restrictions",
+    "description": "Created a NextJS website that allows students to scan a QR code to track their club and event attendance. It also allows club officers to create check in events, view all students who have checked in. They can also restrict login to students located at the school using IP and geolocation. They can also export data to a spreadsheet for easy viewing and logging. Students can view all their attendance for a specific club as well.",
+    "date": "May 2024",
+    "primaryHref": "https://github.com/krishrenjen/sbhs-club-attendance",
+    "links": [
+      {
+        "text": "GitHub Repository",
+        "href": "https://github.com/krishrenjen/sbhs-club-attendance",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+      }
+    ],
+    "tags": [
+      {
+        "title": "TypeScript",
+        "color": "0,122,204",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
+      },
+      {
+        "title": "NextJS",
+        "color": "255,255,255",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
+      },
+      {
+        "title": "PostgreSQL",
+        "color": "51,103,145",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"
+      },
+      {
+        "title": "Prisma",
+        "color": "45,55,72",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
+      }
+    ]
+  },
+  {
+    "id": "circlize-app",
+    "shortTitle": "Circlize",
+    "title": "Circlize Mobile Android App",
+    "title_tags": ["Android", "Mobile App"],
+    "images": [],
+    "short_description": "Android app that allows users to create or join Circles, post messages, and change their user details.",
+    "description": "An Android app that allows users to create or join Circles, in which they can then post messages to the stream. Additionally, they can change their username, and profile pictures. Features a login and signup screen as well. Connected to Flask server through a Rest API, which would then connect to the Firebase database to write and read data.",
+    "date": "June 2023",
+    "primaryHref": "https://github.com/krishrenjen/sbhs-club-attendance",
+    "links": [],
+    "tags": [
+      {
+        "title": "Java",
+        "color": "197,85,85",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+      },
+      {
+        "title": "Android (Studio)",
+        "color": "164,196,57",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"
+      },
+      {
+        "title": "Firebase",
+        "color": "255,160,0",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"
+      },
+      {
+        "title": "Flask",
+        "color": "255, 255, 255",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
+      },
+      {
+        "title": "Python",
+        "color": "255,211,67",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg"
+      }
+    ]
+  },
+  {
+    "id": "weather-app",
+    "shortTitle": "Weather App",
+    "title": "Weather Mobile Android App",
+    "title_tags": ["Android", "Mobile App"],
+    "images": [],
+    "short_description": "Android app that allows users to view the weather according to a Zip Code.",
+    "description": "Project in mobile application class. Developed an Android weather app that utilized the OpenWeather API to display weather information. Design inspired by the Apple weather app.",
+    "date": "January 2023",
+    "primaryHref": "https://github.com/krishrenjen/crystal_weather",
+    "links": [
+      {
+        "text": "GitHub Repository",
+        "href": "https://github.com/krishrenjen/crystal_weather",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+      },
+      {
+        "text": "Video Walkthrough",
+        "href": "https://drive.google.com/file/d/1St4PNV4kq08qbGj35996Z6zBJxuZtf3A/view?usp=sharing"
+      }
+    ],
+    "tags": [
+      {
+        "title": "Java",
+        "color": "197,85,85",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+      },
+      {
+        "title": "Android (Studio)",
+        "color": "164,196,57",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"
+      }
+    ]
+  }
 ]
