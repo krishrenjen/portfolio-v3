@@ -2,16 +2,21 @@
 const nextConfig = {
   images: {
     domains: [
-      'krishrenjen.github.io',         // GitHub Pages
-      'lh3.googleusercontent.com',     // Google Drive images (when shared correctly)
+      "krishrenjen.github.io", // GitHub Pages
+      "lh3.googleusercontent.com", // Google Drive images (when shared correctly)
     ],
   },
 
   async rewrites() {
     return [
       {
-        source: '/resume.pdf',
-        destination: 'https://krishrenjen.github.io/portfolio-data/resume.pdf',
+        source: "/resume.pdf",
+        destination: "https://krishrenjen.github.io/portfolio-data/resume.pdf",
+      },
+      {
+        source: "/paper/:path*",
+        destination:
+          "https://krishrenjen.github.io/portfolio-data/papers/:path*",
       },
     ];
   },
@@ -19,8 +24,8 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/resume',
-        destination: '/resume.pdf',
+        source: "/resume",
+        destination: "/resume.pdf",
         permanent: true,
       },
     ];
